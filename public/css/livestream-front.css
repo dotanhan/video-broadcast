@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #FC6415;
+}
+
+video {
+    position: relative;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+.live-direct .mini-video {
+    width: 20%;
+    position: absolute;
+    z-index: 9;
+    bottom: 10%;
+    left: 3%;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.inbox_people {
+    background: #f8f8f8 none repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    border-right: 1px solid #c4c4c4;
+    border: 1px solid #c4c4c4;
+}
+
+.chat_ib h5 {
+    font-size: 15px;
+    color: #464646;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+.chat_ib h5 span {
+    font-size: 13px;
+    float: right;
+}
+
+.chat_ib p {
+    font-size: 14px;
+    color: #989898;
+    margin: auto
+}
+
+.chat_img {
+    float: left;
+    width: 20px;
+}
+
+.chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 88%;
+}
+
+.chat_people {
+    overflow: hidden;
+    clear: both;
+    }
+#mess .chat_people{
+    /*background-color: rgba(0,0,0,.075);*/
+    /*padding: 10px;*/
+    border-radius: 10px;
+
+
+}
+#mess {
+    height: 100%;
+}
+
+.chat_list {
+    margin: 0;
+    padding: 18px 16px 10px;
+}
+#demo {
+    position: absolute;
+    z-index: 10;
+    max-height : 100%;
+    width: 200px;
+}
+
+#demo .chat_list .chat_img img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.inbox_people .chat_list .chat_img img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.inbox_people .chat_list .chat_people p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+     color: #5f5555;
+}
+
+.inbox_chat {
+    overflow-y: scroll;
+    height: 497px;
+}
+
+.incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+}
+
+.time_date {
+    color: #747474;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+.input_msg_write input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+    padding: 10px;
+}
+
+.type_msg {
+    border: 1px solid #c4c4c4;
+    position: relative;
+    background-color: white;
+}
+
+.msg_send_btn {
+    background: #05728f none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 33px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    width: 33px;
+}
+
+.end-live {
+    text-align: center;
+    ;
+}
+
+.end-live button {
+    background-color: #E62117;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.live-direct p {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #E62117;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5%;
+    position: absolute;
+    z-index: 9;
+    top: 3%;
+    right: 41%;
+    font-size: 70%;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.modal-content {
+    width: 60%;
+}
+.modal-body {
+    text-align: center;
+}
+.modal-body .btn {
+    margin: 0 20px 0 20px;
+}
+
+
+.header-chat {
+    background-color: #d0c7c7;
+    height: 60px;
+}
+
+.header-chat p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width: 814px) {
+    .type_msg {
+        position: fixed;
+        bottom: 0;
+        right: 30px;
+        left: 30px;
+    }
+}
+@media (max-width: 1199px) {
+    .inbox_chat {
+        height: 400px;
+    }
+}
+
+#videos-container{
+    height: 500px;
+}
+#videos-container video {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+@media (max-width: 415px) {
+    #videos-container{
+        height: 260px;
+    }
+    .live-direct p{
+        right: 2%;
+        top: 2%
+    }
+}
+@media (max-width: 769px) and (min-width: 416px) {
+    #videos-container{
+        height: 330px;
+    }
+    .live-direct p{
+        right: 4%;
+    }
+}
+@media (max-width: 1200px) and (min-width: 770px){
+    #videos-container{
+        height: 453px;
+    }
+}
+.live-direct{
+    border: 1px solid #ccc;
+}
+.head-video{
+    margin: 0;
+    padding: 0;
+    background-color: #d0c7c7;
+}

@@ -1,0 +1,32 @@
+<!-- Demo version: 2018.05.21 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!--head-->
+    <% include head %>
+
+    <!-- scripts used for broadcasting -->
+    <% include script %>
+</head>
+<body>
+<header id="header-stream">
+    <a href="https://toidayhoc.com"><img class="logo" src="/img/new-logo.png" alt=""></a><br>
+</header>
+
+<!--Content-->
+    <%- content %>
+<!--/Content-->
+<!-- commits.js is useless for you! -->
+<script>
+    window.useThisGithubPath = 'muaz-khan/RTCMultiConnection';
+</script>
+<script src="https://cdn.webrtc-experiment.com/common.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<% extend('block/layout') %>
+
+<link rel="stylesheet" href="/css/livestream.css">
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+
+      <div id="demo" class="collapse">
+
+        <div class="inbox_chat" style="width: 105%;height: 300px; background-color: white">
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="avatar.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="chat_list">
+            <div class="chat_people">
+              <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="chat_ib">
+                <h5>Sunil Rajput</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="live-direct"  width="100%" style="position: relative;" >
+        <p id="lived">Đang chuẩn bị</p>
+        <div id="videos-container"></div>
+
+        <select id="cameras-selection-container" class="form-control">
+        </select>
+      </div>
+      <div class="end-live">
+        <!--<button class="btn btn-danger" type="button" name="button" data-toggle="collapse" data-target="#demo"> Danh sách người xem (50)</button>-->
+        <button class="btn btn-danger"  style="" id="start-stream" start="false" type="button" name="button">Bắt đầu phát trực tiếp</button>
+        <!--<button class="btn btn-danger" type="button" name="button">Chia sẻ màn hình</button>-->
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Bạn muốn lưu video này ở đâu ?</h4>
+            </div>
+            <div class="modal-body">
+              <button class="btn btn-danger" id="saveDisk" type="button" name="button">Lưu vào máy</button>
+              <button class="btn btn-danger" id="saveServer" type="button" name="button">Lưu server</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="mess" class="col-md-4">
+      <div class="inbox_people">
+        <div class="header-chat panel-heading">
+          <p>Trò chuyện trực tiếp</p>
+        </div>
+        <div class="inbox_chat" id="chat-list">
+
+        </div>
+        <div class="type_msg">
+          <div class="input_msg_write">
+            <input type="text" id="text-box" class="write_msg" placeholder="Nhập tin nhắn" disabled />
+            <button class="msg_send_btn fa fa-send" id="msg_send_btn" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/broadcast.js"> </script>
+

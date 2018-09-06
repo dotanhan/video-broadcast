@@ -1,0 +1,48 @@
+<% extend('block/layout') %>
+<link rel="stylesheet" href="/css/livestream-front.css">
+<div class="container screen">
+    <div class="row">
+        <div class="col-md-12 main-content">
+            <div class="col-md-8 block-video ">
+                <div class="panel-heading head-video">
+                    <p style="text-align: center;margin: 0;"><strong id="center_name"></strong></p> <br>
+                    <!--<div class="container">-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p style="margin: 0; text-align: center"><b>Khóa học:</b><span id="record_name"></span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p style="margin: 0; text-align: center"><b>Chuyên ngành:</b><span id="category_name"></span></p>
+                        </div>
+                    </div>
+                    <!--</div>-->
+
+                </div>
+                <div class="live-direct" style="position: relative;">
+                    <p id="lived" style="display: none"> trực tiếp <i class="fa fa-user"> <strong> 0</strong></i> </p>
+                    <div id="videos-container">
+
+                    </div>
+                </div>
+            </div>
+            <div id="mess" class="col-md-4">
+                <div class="inbox_people">
+                    <div class="header-chat panel-heading">
+                        <p>Trò chuyện trực tiếp</p>
+                    </div>
+                    <div class="inbox_chat" id="chat-list">
+
+                    </div>
+                    <div class="type_msg">
+                        <div class="input_msg_write">
+                            <input type="text" id="text-box" class="write_msg" placeholder="Nhập tin nhắn" />
+                            <button class="msg_send_btn fa fa-send" id="msg_send_btn" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="/js/watch.js"> </script>
